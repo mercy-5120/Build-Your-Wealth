@@ -94,3 +94,63 @@
 .product-card {
     border-radius: 20px;
 }
+
+/*ABOUT PAGE*/
+.about{
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.about-description {
+    flex: 1;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.main-content-about {
+    color: #032310;
+    background-color: #d2e6e1;
+    display: flex;
+    gap: 40px;
+    font-style: normal;
+}
+
+/*SERVICES PAGE*/
+/* Make boxes side by side */
+.content-box-1,
+.content-box-2,
+.content-box-3 {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    color: #032310;
+}
+
+/* Remove bullet points */
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+/* Add checkmarks */
+li:before {
+    content: "✓ ";
+    color: blue;
+}
+
+/* Simple button */
+.b1-Services {
+    background: black;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
