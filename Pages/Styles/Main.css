@@ -218,3 +218,71 @@ li:before {
     border-radius: 5px;
     margin-left: 100px;
 }
+
+
+/*BOOKINGS PAGE*/
+.main-content-bookings {
+    width: 1220px;
+    height: auto;
+    margin: 30px auto;
+    padding: 0 20px;
+    background-color: #d2e6e1;
+    font-family: Arial, sans-serif;
+}
+
+.main-content-bookings h1 {
+    color: #222;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.main-content-bookings h3 {
+    color: #444;
+    margin: 15px 0;
+}
+
+.main-content-bookings > p {
+    text-align: left;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Content Boxes */
+.content-bookings-box-1,
+.content-bookings-box-2,
+.content-bookings-box-3 {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #042e15;
+}
+
+/* Box 1 */
+.content-bookings-box-1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* Box 2 & 3 Lists */
+.content-bookings-box-2 ul,
+.content-bookings-box-3 ul {
+    padding-left: 20px;
+}
+
+.content-bookings-box-2 li,
+.content-bookings-box-3 li {
+    margin-bottom: 10px;
+}
+
+/* Box 3 List Items */
+.content-bookings-box-3 li {
+    list-style-type: none;
+    background: #fff;
+    padding: 10px;
+    border-left: 3px solid #189765;
+    margin-bottom: 10px;
+}
