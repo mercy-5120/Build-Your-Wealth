@@ -93,6 +93,7 @@
 
 .product-card {
     border-radius: 20px;
+    gap: 10px;
 }
 
 /*ABOUT PAGE*/
@@ -166,4 +167,54 @@ li:before {
     text-decoration: none;
     display: inline-block;
     margin-top: 10px;
+}
+
+
+/*RESOURCES PAGE*/
+.main-content-resources {
+    background-color: #d2e6e1;
+    font-family: Arial, sans-serif;
+    color: #042e15;
+}
+
+/* Container for all boxes */
+.books-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Each box takes 1/3 of width */
+.content-book-box-1, .content-book-box-2, .content-book-box-3,
+.content-book-box-4, .content-book-box-5, .content-book-box-6 {
+    width: 25%;
+    float: left;
+    margin: 1%;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #042e15;
+}
+
+/* Clear every 3rd box */
+.content-book-box-4 {
+    clear: left;
+}
+
+
+.price {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+.b2-resources {
+    display: inline-block;
+    background: #189765;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 100px;
 }
