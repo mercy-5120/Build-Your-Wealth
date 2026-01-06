@@ -3,10 +3,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px 30px;
     background-color: #ffffff;
     width: 94%;
-    border-bottom-radius: 20px;
+    border-radius: 10px;
 }
 
 .logo {
@@ -118,19 +118,32 @@
 }
 
 /*SERVICES PAGE*/
+.main-content-services {
+    background-color: #d2e6e1;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
 /* Make boxes side by side */
 .content-box-1,
 .content-box-2,
 .content-box-3 {
     display: inline-block;
-    width: 30%;
+    width: 25%;
     vertical-align: top;
     margin: 10px;
     padding: 15px;
-    background: white;
+    color: #042e15;
+    background: #ffffff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     font-family: Arial, sans-serif;
-    color: #032310;
+    border-radius: 15px;
+}
+
+.services-title {
+
 }
 
 /* Remove bullet points */
@@ -142,7 +155,7 @@ ul {
 /* Add checkmarks */
 li:before {
     content: "✓ ";
-    color: blue;
+    color: #032310;
 }
 
 /* Simple button */
