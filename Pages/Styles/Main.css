@@ -3,10 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 15px 30px 5px 30px;
+    padding: 10px 15px 5px 15px;
     background-color: #ffffff;
-    width: 94%;
-    border-radius: 10px;
+    width: 1225px;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-right: 20px;
+
 }
 
 .logo {
@@ -37,13 +40,14 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 30px;
-    max-width: 1500px;
+    padding: 30px 0;
+    width: 1255px;
     margin: 0 auto;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    background-color: #e0ede9;
+    background-color: #d2e6e1;
     font-family: Arial, sans-serif;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .text-content {
@@ -87,23 +91,25 @@
     border: 1px solid #d0dfd4;
     border-radius: 12px;
     background-color: #a6cabc;
-    display: flex;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     padding-left: 10px;
+    width: 250px;
 }
 
 
 /* ABOUT PAGE */
 .main-content-about {
     display: flex;
+    align-items: center;
     gap: 40px;
-    padding: 40px;
-    max-width: 1300px;
-    margin: 0px auto;
+    padding: 30px 0;
+    width: 1255px;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     background-color: #d2e6e1;
     font-family: Arial, sans-serif;
-    color: #032310;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .about {
@@ -126,11 +132,12 @@
 /* SERVICES PAGE */
 .main-content-services {
     padding: 40px;
-    max-width: 1200px;
+    width: 1255px;
     margin: 0 auto;
     background-color: #d2e6e1;
     font-family: Arial, sans-serif;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .content-box-1,
@@ -171,7 +178,7 @@ li:before {
 /* RESOURCES PAGE */
 .main-content-resources {
     padding: 40px;
-    max-width: 1200px;
+    width: 1255px;
     margin: 0 auto;
     background-color: #d2e6e1;
     font-family: Arial, sans-serif;
@@ -223,12 +230,13 @@ li:before {
 /* BOOKINGS PAGE */
 .main-content-bookings {
     padding: 40px;
-    max-width: 1200px;
+    width: 1255px;
     margin: 0 auto;
     background-color: #d2e6e1;
     font-family: Arial, sans-serif;
     color: #042e15;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .main-content-bookings h1 {
@@ -284,11 +292,14 @@ li:before {
 /* CONTACT PAGE */
 .main-content-contact {
     padding: 40px;
-    max-width: 1200px;
+    width: 1255px;
     margin: 0 auto;
     background-color: #e0ede9;
     font-family: Arial, sans-serif;
     border-radius: 4px;
+    box-sizing: border-box;
+    color: #042e15;
+
 }
 
 .content-contact-box-1,
@@ -305,28 +316,42 @@ li:before {
 .content-contact-box-1,
 .content-contact-box-2,
 .content-contact-box-3 {
+    display: inline-block;
+    width: 27%;
+    vertical-align: top;
+    margin: 10px;
+    padding: 20px;
+    color: #042e15;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-contact-box-1,
+.content-contact-box-2,
+.content-contact-box-3 {
     text-align: center;
 }
 
 .content-contact-box-1 img,
 .content-contact-box-2 img,
 .content-contact-box-3 img {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     margin-bottom: 15px;
 }
 
 .content-contact-box-1 h3,
 .content-contact-box-2 h3,
 .content-contact-box-3 h3 {
-    color: #333;
+    color: #053318;
     margin-bottom: 10px;
+    font-size: 1.2rem;
+
 }
 
 .content-contact-box-1 p,
 .content-contact-box-2 p,
 .content-contact-box-3 p {
-    color: #555;
+    color: #053318;
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -356,12 +381,12 @@ li:before {
 }
 
 .content-contact-box-4 h3 {
-    color: #333;
+    color: #053318;
     margin-bottom: 15px;
 }
 
 .content-contact-box-4 p {
-    color: #555;
+    color: #053318;
     margin-bottom: 20px;
     line-height: 1.6;
 }
