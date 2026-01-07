@@ -239,6 +239,21 @@ li:before {
     box-sizing: border-box;
 }
 
+.booking-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+/* Content boxes column */
+.content-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .main-content-bookings h1 {
     color: #222;
     margin-bottom: 10px;
@@ -261,7 +276,7 @@ li:before {
     border: 1px solid #eee;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     color: #053318;
 }
 
@@ -289,6 +304,96 @@ li:before {
     margin-bottom: 10px;
 }
 
+/* Calendly Section */
+.calendly-section {
+    flex: 1.2;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border: 1px solid #d0dfd4;
+    position: sticky;
+    top: 20px;
+}
+
+.calendly-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.calendly-header h3 {
+    color: #2c3e50;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.session-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.session-btn {
+    padding: 12px 20px;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    color: #053318;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    text-align: center;
+}
+
+.session-btn:hover {
+    background: #189765;
+    color: white;
+    border-color: #189765;
+    transform: translateY(-2px);
+}
+
+.calendly-widget {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    border: 1px solid #eee;
+}
+
+.calendly-popup {
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.calendly-popup p {
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 16px;
+}
+
+.calendly-popup-btn {
+    padding: 14px 28px;
+    background: #189765;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.calendly-popup-btn:hover {
+    background: #a6cabc; /* Your lighter green color */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(208, 223, 212, 0.5);
+}
 /* CONTACT PAGE */
 .main-content-contact {
     padding: 40px;
