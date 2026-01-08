@@ -13,7 +13,7 @@
 }
 
 .logo {
-    width: 50px;
+    width: 12%;
     height: auto;
 }
 
@@ -242,7 +242,7 @@ li:before {
 .booking-wrapper {
     display: flex;
     gap: 40px;
-    align-items: flex-start;
+    align-items: flex-start;/*Items align at the top*/
     margin-top: 30px;
 }
 
@@ -329,7 +329,7 @@ li:before {
 
 .session-buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;/*Items are stacked in a column*/
     gap: 12px;
     margin-bottom: 20px;
 }
@@ -342,7 +342,7 @@ li:before {
     color: #053318;
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;/*Applies transition to all properties*/
     font-size: 15px;
     text-align: center;
 }
@@ -351,7 +351,7 @@ li:before {
     background: #189765;
     color: white;
     border-color: #189765;
-    transform: translateY(-2px);
+    transform: translateY(-2px);/*The button is shifted 2 pixels higher when the cursor hovers*/
 }
 
 .calendly-widget {
@@ -390,7 +390,7 @@ li:before {
 }
 
 .calendly-popup-btn:hover {
-    background: #a6cabc; /* Your lighter green color */
+    background: #a6cabc;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(208, 223, 212, 0.5);
 }
