@@ -102,6 +102,12 @@
     border: 2px solid #e4c01e;
 }
 
+.content-contact-box{
+    border: 1px solid #032c03;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+
 .content-home-box-1,
 .content-home-box-2,
 .content-home-box-3,
@@ -111,14 +117,17 @@
     color: white;
     border-radius: 15px;
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 5px rgb(5, 51, 24);
 
 }
 
 .content-home-box-1,
 .content-home-box-2,
 .content-home-box-3{
-    width: 27%;
+    width: 22%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     vertical-align: top;
 }
@@ -127,6 +136,7 @@
     background-color: #a6cabc;
     border-color: #cce5ff;
     text-align: center;
+    clear: left;
 }
 
 .home-icon{
@@ -198,7 +208,7 @@
 .content-box-2,
 .content-box-3 {
     display: inline-block;
-    width: 27%;
+    width: 22%;
     vertical-align: top;
     margin: 10px;
     padding: 20px;
@@ -220,7 +230,7 @@ li:before {
 }
 
 .b1-Services {
-    background: #189765;
+    background: #063c07;
     color: white;
     padding: 8px 15px;
     text-decoration: none;
@@ -273,7 +283,7 @@ li:before {
 
 .b2-resources {
     display: inline-block;
-    background: #189765;
+    background: #063c07;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
