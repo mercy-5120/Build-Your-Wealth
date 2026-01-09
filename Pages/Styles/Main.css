@@ -112,7 +112,7 @@
 .content-home-box-2,
 .content-home-box-3,
 .content-home-box-4 {
-    border: 0.3px solid #E2BE1D;
+    border: 1px solid #E2BE1D;
     background-color: #053318;
     color: white;
     border-radius: 15px;
@@ -161,30 +161,46 @@
 }
 
 
-/* ABOUT PAGE */
+/* ABOUT PAGE - FIXED TO FILL FULL WIDTH */
 .main-content-about {
     display: flex;
-    align-items: center;
-    gap: 40px;
-    padding: 30px 0;
+    flex-direction: column;
+    align-items: normal;
+    padding: 40px 20px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     background-color: #063c07;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
     color: #d2e6e1;
+    min-height: 100vh;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 .about {
-    width: 40%;
+    flex: 1;
+    min-width: 300px;
+    max-width: 80%;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
 .about-description {
     flex: 1;
-    font-size: 13px;
+    min-width: 300px;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 20px;
 }
 
 .icon {
@@ -195,6 +211,19 @@
 
 .h1-About {
     color: #ecc106;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+}
+
+.about-values-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .Mission,
@@ -204,47 +233,76 @@
     background-color: #053318;
     color: white;
     border-radius: 15px;
-    margin: 10px;
-    padding: 10px;
-    display: inline-block;
+    padding: 30px;
     font-family: Arial, sans-serif;
-    width: 24%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    vertical-align: top;
-    min-height: 150px;
-    height: 300px;
-    overflow: hidden;
+    flex: 1;
+    min-width: 300px;
+    min-height: 250px;
     box-sizing: border-box;
+    width: 100%;
 }
 
-/* SERVICES PAGE */
+.Mission{
+    margin-bottom: 10px;
+}
+
+.Vision{
+    margin-bottom: 10px;
+}
+
+
+/* SERVICES PAGE - FIXED TO FILL FULL WIDTH */
 .main-content-services {
-    padding: 40px;
+    padding: 40px 20px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     background-color: #063c07;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
     color: #d2e6e1;
+    min-height: 100vh;
+}
+
+.services-title {
+    text-align: left;
+    color: #ecc106;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .content-box-1,
 .content-box-2,
 .content-box-3 {
-    display: inline-block;
-    width: 27%;
-    vertical-align: top;
-    margin: 10px;
-    padding: 15px;
+    padding: 30px;
     background: #a6cabc;
     border-radius: 15px;
     color: #042e15;
     font-family: Arial, sans-serif;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    min-height: 250px;
-    height: 400px;
-    overflow: hidden;
+    flex: 1;
+    min-width: 300px;
+    min-height: 500px;
     box-sizing: border-box;
+    width: 70%;
+}
+
+.content-box-1{
+    margin-bottom: 30px;
+}
+
+.content-box-2{
+    margin-bottom: 30px;
 }
 
 ul {
@@ -260,98 +318,137 @@ li:before {
 .b1-Services {
     background: #063c07;
     color: white;
-    padding: 8px 15px;
+    padding: 12px 25px;
     text-decoration: none;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-/* RESOURCES PAGE */
+.b1-Services:hover {
+    background-color: #189765;
+}
+
+/* RESOURCES PAGE - FIXED TO FILL FULL WIDTH */
 .main-content-resources {
-    padding: 40px;
+    padding: 40px 20px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     background-color: #063c07;
     font-family: Arial, sans-serif;
     color: #d0dfd4;
     box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.resources-title {
+    text-align: center;
+    color: #ecc106;
+    margin-bottom: 40px;
+    width: 100%;
+    font-size: 2.5rem;
 }
 
 .book-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .content-book-box-1, .content-book-box-2, .content-book-box-3,
 .content-book-box-4, .content-book-box-5, .content-book-box-6 {
-    display: inline-block;
-    width: 25%;
-    vertical-align: top;
-    margin: 10px;
-    padding: 15px;
     background: #a6cabc;
+    padding: 30px;
     border-radius: 15px;
     color: #042e15;
     font-family: Arial, sans-serif;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    min-height: 250px;
-    height: 350px;
-    overflow: hidden;
+    flex: 1;
+    min-width: 300px;
+    min-height: 350px;
     box-sizing: border-box;
+    width: 70%
 }
 
-/* Clear every 3rd box */
-.content-book-box-4 {
-    clear: left;
+.content-book-box-1{
+    margin-bottom: 20px;
+}
+.content-book-box-2{
+    margin-bottom: 20px;
+}
+.content-book-box-3{
+    margin-bottom: 20px;
+}
+.content-book-box-4{
+    margin-bottom: 20px;
+}
+.content-book-box-5{
+    margin-bottom: 20px;
 }
 
 .price {
     display: inline-block;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     margin-right: 20px;
+    color: #064320;
 }
 
 .b2-resources {
     display: inline-block;
     background: #063c07;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     text-decoration: none;
     border-radius: 5px;
     margin-left: 20px;
+    transition: background-color 0.3s;
 }
 
-/* BOOKINGS PAGE */
+.b2-resources:hover {
+    background-color: #189765;
+}
+
+/* BOOKINGS PAGE - FIXED TO FILL FULL WIDTH */
 .main-content-bookings {
-    padding: 40px;
+    padding: 40px 20px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     background-color: #063c07;
     font-family: Arial, sans-serif;
     color: #d0dfd4;
     box-sizing: border-box;
+    min-height: 100vh;
 }
 
 .booking-wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
-    align-items: flex-start;/*Items align at the top*/
+    align-items: flex-start;
     margin-top: 30px;
+    width: 100%;
+    padding: 0 20px;
 }
 
 /* Content boxes column */
 .content-column {
     flex: 1;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .main-content-bookings h1 {
-    color: #222;
+    color: #ecc106;
     margin-bottom: 10px;
+    text-align: center;
+    font-size: 2.5rem;
 }
 
 .main-content-bookings h3 {
@@ -369,11 +466,20 @@ li:before {
 .content-bookings-box-3 {
     background-color: #a6cabc;
     border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 20px;
+    border-radius: 15px;
+    padding: 30px;
     margin-bottom: 0;
     color: #053318;
+    width: 80%;
 }
+
+.content-bookings-box-1{
+    margin-bottom: 20px;
+}
+.content-bookings-box-2{
+    margin-bottom: 20px;
+}
+
 
 .content-bookings-box-1 {
     display: flex;
@@ -402,13 +508,13 @@ li:before {
 /* Calendly Section */
 .calendly-section {
     flex: 1.2;
+    min-width: 300px;
     background: #a6cabc;
-    border-radius: 12px;
-    padding: 25px;
+    border-radius: 15px;
+    padding: 30px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     border: 1px solid #d0dfd4;
-    position: sticky;
-    top: 20px;
+    width: 100%;
 }
 
 .calendly-header {
@@ -424,7 +530,7 @@ li:before {
 
 .session-buttons {
     display: flex;
-    flex-direction: column;/*Items are stacked in a column*/
+    flex-direction: column;
     gap: 12px;
     margin-bottom: 20px;
 }
@@ -437,7 +543,7 @@ li:before {
     color: #053318;
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.3s ease;/*Applies transition to all properties*/
+    transition: all 0.3s ease;
     font-size: 15px;
     text-align: center;
 }
@@ -446,7 +552,7 @@ li:before {
     background: #189765;
     color: white;
     border-color: #189765;
-    transform: translateY(-2px);/*The button is shifted 2 pixels higher when the cursor hovers*/
+    transform: translateY(-2px);
 }
 
 .calendly-widget {
@@ -489,67 +595,91 @@ li:before {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(208, 223, 212, 0.5);
 }
-/* CONTACT PAGE */
+
+/* CONTACT PAGE - FIXED TO FILL FULL WIDTH */
 .main-content-contact {
     background-image: url("../Assets/coinscontact.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-
-    padding: 40px;
+    padding: 40px 20px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     background-color: #063c07;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
     color: #d0dfd4;
-
+    min-height: 100vh;
 }
 
-.content-contact-box-1,
-.content-contact-box-2,
-.content-contact-box-3,
-.content-contact-box-4 {
-    background-color: #a6cabc;
-    border-radius: 13px;
-    padding: 25px;
-    margin-bottom: 20px;
-    border: 1px solid #e0e0e0;
+.contact-title {
+    text-align: center;
+    color: #ecc106;
+    margin-bottom: 40px;
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 30px;
 }
 
 .content-contact-box-1,
 .content-contact-box-2,
 .content-contact-box-3 {
-    display: inline-block;
-    width: 27%;
-    vertical-align: top;
-    margin: 10px;
-    padding: 20px;
+    background-color: #a6cabc;
+    border-radius: 15px;
+    padding: 30px;
     color: #042e15;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-.content-contact-box-1,
-.content-contact-box-2,
-.content-contact-box-3 {
+.content-contact-box-4 {
+    background-color: #0c7a3c;
+    border-radius: 15px;
+    padding: 40px;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
+    border-color: #cce5ff;
 }
+
+.content-contact-box-1{
+    margin-bottom: 20px;
+}
+.content-contact-box-2{
+    margin-bottom: 20px;
+}
+.content-contact-box-3{
+    margin-bottom: 30px;
+}
+
 
 .content-contact-box-1 img,
 .content-contact-box-2 img,
 .content-contact-box-3 img {
-    width: 25px;
-    height: 25px;
-    margin-bottom: 15px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
 }
 
 .content-contact-box-1 h3,
 .content-contact-box-2 h3,
 .content-contact-box-3 h3 {
     color: #053318;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-
+    margin-bottom: 15px;
+    font-size: 1.5rem;
 }
 
 .content-contact-box-1 p,
@@ -558,12 +688,13 @@ li:before {
     color: #053318;
     margin-bottom: 20px;
     line-height: 1.6;
+    font-size: 16px;
 }
 
 .directions-contact,
 .contact-phone,
 .contact-email {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .directions-contact a,
@@ -573,26 +704,29 @@ li:before {
     background-color: #189765;
     color: white;
     text-decoration: none;
-    padding: 10px 25px;
-    border-radius: 5px;
+    padding: 12px 30px;
+    border-radius: 8px;
     font-weight: 500;
+    transition: background-color 0.3s;
 }
 
-.content-contact-box-4 {
-    background-color: #0c7a3c;
-    border-color: #cce5ff;
-    text-align: center;
+.directions-contact a:hover,
+.contact-phone a:hover,
+.contact-email a:hover {
+    background-color: #064320;
 }
 
 .content-contact-box-4 h3 {
     color: #053318;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
 .content-contact-box-4 p {
     color: #053318;
     margin-bottom: 20px;
     line-height: 1.6;
+    font-size: 16px;
 }
 
 .whatsapp-link {
@@ -602,19 +736,23 @@ li:before {
     background-color: #25D366;
     color: white;
     text-decoration: none;
-    padding: 12px 30px;
-    border-radius: 5px;
+    padding: 14px 35px;
+    border-radius: 8px;
     font-weight: 500;
-    gap: 10px;
+    gap: 12px;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-link:hover {
+    background-color: #128C7E;
 }
 
 .whatsapp-link img {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
 }
 
-/* RESPONSIVE STYLES - ADDED BELOW WITHOUT ALTERING ABOVE CODE */
-
+/* ========== RESPONSIVE STYLES ========== */
 /* Tablet (1024px and below) */
 @media (max-width: 1024px) {
     .topbar {
@@ -648,194 +786,196 @@ li:before {
     .content-home-box-2,
     .content-home-box-3 {
         width: 30%;
-        margin: 8px;
     }
 
-    .main-content-about {
-        padding: 30px 20px;
+    .about-container {
+        gap: 30px;
+    }
+
+    .about-values-container {
+        gap: 20px;
     }
 
     .Mission,
     .Vision,
     .Core-Purpose {
-        width: 30%;
-        height: 320px;
+        min-width: 30%;
     }
 
-    .main-content-services {
-        padding: 30px 20px;
-    }
-
-    .content-box-1,
-    .content-box-2,
-    .content-box-3 {
-        width: 30%;
-        height: 380px;
-    }
-
-    .main-content-resources {
-        padding: 30px 20px;
-    }
-
-    .content-book-box-1,
-    .content-book-box-2,
-    .content-book-box-3,
-    .content-book-box-4,
-    .content-book-box-5,
-    .content-book-box-6 {
-        width: 30%;
-        margin: 8px;
-        height: 340px;
-    }
-
-    .main-content-bookings {
-        padding: 30px 20px;
+    .services-container,
+    .book-container,
+    .contact-container {
+        gap: 25px;
     }
 
     .booking-wrapper {
         gap: 30px;
-    }
-
-    .main-content-contact {
-        padding: 30px 20px;
-    }
-
-    .content-contact-box-1,
-    .content-contact-box-2,
-    .content-contact-box-3 {
-        width: 30%;
-        margin: 8px;
     }
 }
 
 /* Mobile (768px and below) */
 @media (max-width: 768px) {
     .topbar {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        padding: 12px 15px;
-        gap: 10px;
-        width: 100%;
+        padding: 15px 10px;
+        gap: 15px;
         margin-right: 0;
     }
 
     .logo {
-        width: 25%;
-        min-width: 80px;
+        width: 50%;
+        max-width: 180px;
+        margin: 0 auto;
     }
 
     .navigation-links {
-        flex-wrap: nowrap;
-        overflow-x: auto;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 12px;
-        padding: 5px 0;
-        justify-content: flex-start;
+        padding: 0;
     }
 
     .navigation-links a {
         font-size: 14px;
+        padding: 8px 12px;
         white-space: nowrap;
-        padding: 5px 8px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
     }
 
+    /* HOME PAGE */
     .main-content-home {
         flex-direction: column;
-        padding: 20px 15px;
+        padding: 25px 15px;
         gap: 25px;
         min-height: auto;
+        background-attachment: scroll;
     }
 
     .home-image {
-        max-width: 90%;
-        width: 90%;
-        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto 25px;
     }
 
     .text-content {
         max-width: 100%;
         padding-left: 0;
         text-align: center;
+        width: 100%;
     }
 
     .content-home-box-1,
     .content-home-box-2,
     .content-home-box-3 {
-        width: 90%;
+        width: 100%;
         display: block;
-        margin: 10px auto;
+        margin: 15px 0;
         height: auto;
-        min-height: 120px;
+        min-height: 150px;
     }
 
     .content-home-box-4 {
-        width: 90%;
-        margin: 20px auto;
+        width: 100%;
+        margin: 20px 0;
         display: block;
     }
 
     .buttons-home {
-        justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
     }
 
     .home-booking,
     .home-services,
     .home-about {
-        padding: 10px 20px;
-        font-size: 14px;
+        width: 90%;
+        max-width: 280px;
+        text-align: center;
+        padding: 14px 25px;
+        font-size: 15px;
     }
 
+    /* ABOUT PAGE */
     .main-content-about {
+        padding: 25px 15px;
+    }
+
+    .about-container {
         flex-direction: column;
-        padding: 20px 15px;
+        align-items: center;
         gap: 25px;
     }
 
     .about {
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
     }
 
     .about-description {
         text-align: center;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .about-values-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
     }
 
     .Mission,
     .Vision,
     .Core-Purpose {
-        width: 90%;
-        display: block;
-        margin: 10px auto;
-        height: auto;
-        min-height: 150px;
+        width: 100%;
+        max-width: 100%;
+        margin: 15px 0;
+        min-height: 200px;
     }
 
+    /* SERVICES PAGE */
     .main-content-services {
-        padding: 20px 15px;
+        padding: 25px 15px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
     }
 
     .content-box-1,
     .content-box-2,
     .content-box-3 {
-        width: 90%;
-        display: block;
-        margin: 15px auto;
-        height: auto;
-        min-height: 200px;
+        width: 100%;
+        max-width: 100%;
+        margin: 15px 0;
+        min-height: 300px;
     }
 
     .b1-Services {
         display: block;
         text-align: center;
-        margin: 15px auto;
+        margin: 20px auto;
+        width: 90%;
+        max-width: 220px;
+        padding: 12px 20px;
+        font-size: 15px;
     }
 
+    /* RESOURCES PAGE */
     .main-content-resources {
-        padding: 20px 15px;
+        padding: 25px 15px;
     }
 
     .book-container {
-        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
     }
 
     .content-book-box-1,
@@ -844,32 +984,45 @@ li:before {
     .content-book-box-4,
     .content-book-box-5,
     .content-book-box-6 {
-        width: 90%;
-        display: block;
-        margin: 15px auto;
-        height: auto;
-        min-height: 200px;
-        clear: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 15px 0;
+        min-height: 300px;
     }
 
     .price,
     .b2-resources {
         display: block;
-        margin: 10px 0;
+        margin: 15px 0;
         text-align: center;
+        width: 100%;
+    }
+
+    .price {
+        margin-bottom: 10px;
+        font-size: 16px;
     }
 
     .b2-resources {
-        margin-left: 0;
+        margin-top: 15px;
+        padding: 12px 25px;
+        font-size: 15px;
+        width: 90%;
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    /* BOOKINGS PAGE */
     .main-content-bookings {
-        padding: 20px 15px;
+        padding: 25px 15px;
     }
 
     .booking-wrapper {
         flex-direction: column;
-        gap: 25px;
+        gap: 30px;
+        margin-top: 25px;
+        padding: 0 10px;
     }
 
     .content-column {
@@ -879,30 +1032,57 @@ li:before {
     .content-bookings-box-1 {
         flex-direction: column;
         text-align: center;
-        gap: 15px;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .content-bookings-box-2,
+    .content-bookings-box-3 {
+        padding: 25px;
     }
 
     .calendly-section {
         position: static;
         width: 100%;
+        margin-top: 25px;
+        padding: 25px;
     }
 
     .session-buttons {
         flex-direction: column;
     }
 
+    .session-btn {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+
+    /* CONTACT PAGE */
     .main-content-contact {
-        padding: 20px 15px;
+        padding: 25px 15px;
         background-attachment: scroll;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
     }
 
     .content-contact-box-1,
     .content-contact-box-2,
-    .content-contact-box-3,
+    .content-contact-box-3 {
+        width: 100%;
+        max-width: 100%;
+        margin: 15px 0;
+        min-height: 250px;
+    }
+
     .content-contact-box-4 {
-        width: 90%;
-        display: block;
-        margin: 15px auto;
+        padding: 25px 15px;
+        width: 100%;
     }
 
     .directions-contact a,
@@ -911,140 +1091,73 @@ li:before {
     .whatsapp-link {
         display: block;
         text-align: center;
-        margin: 10px auto;
+        margin: 15px auto;
+        width: 90%;
+        max-width: 250px;
+        box-sizing: border-box;
+        padding: 14px 25px;
+        font-size: 15px;
     }
 }
 
 /* Small Mobile (480px and below) */
 @media (max-width: 480px) {
     .topbar {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
+        padding: 12px 8px;
     }
 
     .logo {
-        width: 40%;
-        margin: 0 auto;
-        display: block;
+        width: 60%;
+        max-width: 160px;
     }
 
     .navigation-links {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
+        gap: 8px;
     }
 
     .navigation-links a {
         font-size: 13px;
-        padding: 4px 6px;
+        padding: 6px 10px;
     }
 
-    .main-content-home {
-        padding: 15px 10px;
-        gap: 20px;
+    .main-content-home,
+    .main-content-about,
+    .main-content-services,
+    .main-content-resources,
+    .main-content-bookings,
+    .main-content-contact {
+        padding: 20px 10px;
     }
 
-    .home-image {
-        max-width: 95%;
-    }
-
-    .content-home-box-1,
-    .content-home-box-2,
-    .content-home-box-3,
-    .content-home-box-4 {
-        width: 95%;
-        padding: 15px;
-    }
-
-    .buttons-home {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+    .h1-About,
+    .services-title,
+    .resources-title,
+    .contact-title,
+    .main-content-bookings h1 {
+        font-size: 2rem;
     }
 
     .home-booking,
     .home-services,
-    .home-about {
-        width: 90%;
-        text-align: center;
-    }
-
-    .Mission,
-    .Vision,
-    .Core-Purpose {
-        width: 95%;
-        padding: 15px;
-    }
-
-    .content-box-1,
-    .content-box-2,
-    .content-box-3 {
-        width: 95%;
-        padding: 15px;
-    }
-
-    .content-book-box-1,
-    .content-book-box-2,
-    .content-book-box-3,
-    .content-book-box-4,
-    .content-book-box-5,
-    .content-book-box-6 {
-        width: 95%;
-        padding: 15px;
-    }
-
-    .session-btn {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-
-    .calendly-popup-btn {
-        padding: 12px 20px;
-        font-size: 14px;
-    }
-
-    .content-contact-box-1,
-    .content-contact-box-2,
-    .content-contact-box-3,
-    .content-contact-box-4 {
-        width: 95%;
-        padding: 15px;
-    }
-
+    .home-about,
+    .b1-Services,
+    .b2-resources,
     .directions-contact a,
     .contact-phone a,
     .contact-email a,
     .whatsapp-link {
-        padding: 8px 15px;
+        width: 95%;
+        padding: 12px 20px;
         font-size: 14px;
-    }
-}
-
-/* Landscape Mobile (max-height: 600px) */
-@media (max-height: 600px) and (max-width: 768px) {
-    .main-content-home,
-    .main-content-about,
-    .main-content-contact {
-        min-height: auto;
-        padding: 15px;
     }
 
     .content-home-box-1,
     .content-home-box-2,
     .content-home-box-3,
-    .content-box-1,
-    .content-box-2,
-    .content-box-3 {
-        height: auto;
-        min-height: 150px;
-        padding: 12px;
-    }
-}
-
-/* Fix for content boxes on mobile */
-@media (max-width: 768px) {
+    .content-home-box-4,
+    .Mission,
+    .Vision,
+    .Core-Purpose,
     .content-box-1,
     .content-box-2,
     .content-box-3,
@@ -1054,10 +1167,20 @@ li:before {
     .content-book-box-4,
     .content-book-box-5,
     .content-book-box-6,
-    .Mission,
-    .Vision,
-    .Core-Purpose {
-        overflow: visible;
-        height: auto;
+    .content-contact-box-1,
+    .content-contact-box-2,
+    .content-contact-box-3,
+    .content-contact-box-4,
+    .content-bookings-box-1,
+    .content-bookings-box-2,
+    .content-bookings-box-3 {
+        padding: 20px;
+        margin: 15px 0;
+    }
+
+    .session-btn,
+    .calendly-popup-btn {
+        padding: 12px 18px;
+        font-size: 14px;
     }
 }
